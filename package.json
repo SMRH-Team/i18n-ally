@@ -5,6 +5,7 @@
   "version": "2.4.14",
   "publisher": "antfu",
   "scripts": {
+    "build:vsix": "npx vsce package",
     "release": "npm run release:patch",
     "release:minor": "standard-version --release-as minor && git push --follow-tags",
     "release:patch": "standard-version --release-as patch && git push --follow-tags",

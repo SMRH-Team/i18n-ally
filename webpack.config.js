@@ -17,7 +17,7 @@ const config = {
     libraryTarget: 'commonjs2',
     devtoolModuleFilenameTemplate: '../[resource-path]',
   },
-  devtool: 'nosources-source-map',
+  // devtool: 'nosources-source-map',
   externals: {
     vscode: 'commonjs vscode',
     nodejieba: 'nodejieba',
