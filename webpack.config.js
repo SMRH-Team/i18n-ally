@@ -8,6 +8,7 @@ const FilterWarningsPlugin = require('webpack-filter-warnings-plugin')
 /** @type {import('webpack').Configuration} */
 const config = {
   target: 'node',
+  mode: 'none',
 
   entry: './src/extension.ts',
   output: {
@@ -16,7 +17,7 @@ const config = {
     libraryTarget: 'commonjs2',
     devtoolModuleFilenameTemplate: '../[resource-path]',
   },
-  // devtool: 'source-map',
+  devtool: 'nosources-source-map',
   externals: {
     vscode: 'commonjs vscode',
     nodejieba: 'nodejieba',
